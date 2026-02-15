@@ -1,5 +1,22 @@
 /* Rhombus Audit - Strategnik Dark Theme */
 
+/* Söhne Breit Fonts */
+@font-face {
+  font-family: 'Soehne Breit';
+  src: url('/fonts/soehne-breit-buch-kursiv.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Soehne Breit';
+  src: url('/fonts/soehne-breit-kraftig.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg-primary: #000000;
   --bg-secondary: #111111;
@@ -26,10 +43,20 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Soehne Breit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: italic;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.btn, .nav-links a, .mobile-nav a {
+  font-style: normal;
 }
 
 .container {
